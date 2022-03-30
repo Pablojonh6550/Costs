@@ -1,6 +1,11 @@
+// --CSS--
+import styles from './css/NewProject.module.css';
+
 function NewProject() {
     return (
-        <h1>NewProject</h1>
+        <div>
+            
+        </div>
     );
 }
 
