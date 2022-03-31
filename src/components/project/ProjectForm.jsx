@@ -37,9 +37,9 @@ function ProjectForm({ handleSubmit, buttonText, projectData}) {
 
     }
 
-    function handleCategoty(e) {
+    function handleCategory(e) {
         setProject({...project, 
-            categoty: {
+            category: {
                 id: e.target.value,
                 name: e.target.options[e.target.selectedIndex].text,
             }
@@ -52,7 +52,7 @@ function ProjectForm({ handleSubmit, buttonText, projectData}) {
         <form onSubmit={submit} className={styles.form}>
                 <Input type="text" text="Nome do Projeto" name="name" placeholder="Insira o nome do projeto" handleOnChange={handleChange} value={project.name ? project.name : ''}/>
                 <Input type="number" text="Orçamento do projeto" name="budget" placeholder="Insira o valor total do projeto" handleOnChange={handleChange} value={project.budget ? project.budget : ''} />           
-                <Select name="category_id" text="Selecione a categoria"  options={categories} handleOnChange={handleCategoty}  value={project.category ? project.category.id : ''} />
+                <Select name="category_id" text="Selecione a categoria"  options={categories} handleOnChange={handleCategory}  value={project.category ? project.category.id : ''} />
                 <SubmitButton text={buttonText} />
         </form>
     );
