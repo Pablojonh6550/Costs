@@ -23,8 +23,8 @@ function NewProject() {
             body: JSON.stringify(project),
         }).then((request) => request.json())
         .then((data) => { 
-            console.log(data)
-            history.push('/project', {message: 'Projeto criado com sucesso! '})
+            console.log(data);
+            history.push('/projects', {message: 'Projeto criado com sucesso! '});
         }) //redirect
         .catch(error => console.log(error));
 
