@@ -63,7 +63,7 @@
 }
 
 .project_card_actions {
-    margin-top: 1.2em;
+    margin-top: 1.5em;
     display: flex;
     align-items: center;
 
@@ -72,19 +72,18 @@
 .project_card_actions a,
 .project_card_actions button {
     text-decoration: none;
-    border: none;
-    background-color: #FFF;
-    color: #777;
+    padding: 0.5em 1em;
+    border: 0.5px solid #222;
+    border-radius: 0.4em;
+    color: #222;
+    background: #FFF;
+    font-weight: 1000;
     font-size: 0.9em;
-    padding: 0.6em 1em;
-    margin-right: 4.5em;
-    cursor: pointer;
-    border: 1.5px solid #222;
-    border-radius: 0.5em;
+    transition: all 0.5s ease;
+    margin-right: 3.8em;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s ease;
     
 }
 
@@ -93,9 +92,14 @@
 
 }
 
-.project_card_actions a:hover,
-.project_card_actions button:hover{
+.project_card_actions a:hover {
     background-color: #222;
     color: #ffbb33;
 
+}
+
+.project_card_actions button:hover {
+    background-color: #e62222;
+    border: 0.5px solid #e62222;
+    color: #fff;
 }

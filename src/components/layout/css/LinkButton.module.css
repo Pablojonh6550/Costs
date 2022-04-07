@@ -1,14 +1,27 @@
 .button {
-    background-color: #222;
-    color: #FFF;
-    padding: 0.5em 1em;
+    /* padding: 0.5em 1em; */
+    cursor: pointer;
+    color: #222;
     text-decoration: none;
-    transition: 0.5s ease;
-    border-radius: 5px;
+    background: #ffbb33;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 14px;
+    border: 2px solid #222;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
 
 }
 
 .button:hover {
-    color: #ffbb33;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
 
 }
+
+.button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+
+   }
