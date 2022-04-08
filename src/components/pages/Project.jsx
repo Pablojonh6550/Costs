@@ -94,7 +94,9 @@ function Project() {
             body: JSON.stringify(project)
         }).then((request => request.json()))
         .then((data) => {
-            
+            console.log(data);
+            setMessageService('Serviço adicionado ao projeto.');
+            setType('success');
         })
         .catch(error => console.log(error));
 
