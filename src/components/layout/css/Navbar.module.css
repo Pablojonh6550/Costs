@@ -6,6 +6,16 @@
 
 }
 
+.navbar span {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 0.5px;
+    display: flex;
+    margin-right: 55%;
+    cursor: pointer;
+}
+
 .list {
     display: flex;
     list-style: none;

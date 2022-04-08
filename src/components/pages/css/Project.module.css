@@ -1,6 +1,6 @@
 .project_details {
     padding: 2em;
-    
+        
 }
 
 .project_details h1,
@@ -14,6 +14,7 @@
     background-color: #222;
     color: #ffbb33;
     padding: 0.4em;
+    border-radius: 5px;
 
 }
 
@@ -30,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    
 }
 
 .button {
@@ -51,5 +52,11 @@
 
 }
 .project_info {
+    width: 70%;
+    
+}
+
+.project_info_service {
     width: 100%;
+    
 }

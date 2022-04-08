@@ -2,10 +2,10 @@
   "projects": [
     {
       "name": "Projeto test",
-      "budget": "5000",
+      "budget": "4550",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
