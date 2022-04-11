@@ -47,19 +47,19 @@
 
 /* -| Colors referring to the type of project.  */
 .category_text .infra {
-    background-color: #ffaebc;
+    background-color: #ff4d6d;
 }
 
 .category_text .desenvolvimento {
-    background-color: #a0e7e5;
+    background-color: #61a5c2;
 }
 
 .category_text .design {
-    background-color: #b4f8c8;
+    background-color: #c1928e;
 }
 
 .category_text .planejamento {
-    background-color: #fbe7c6;
+    background-color: #9d4edd;
 }
 
 .project_card_actions {
@@ -84,6 +84,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     
 }
 
@@ -102,4 +103,5 @@
     background-color: #e62222;
     border: 0.5px solid #e62222;
     color: #fff;
+    
 }
