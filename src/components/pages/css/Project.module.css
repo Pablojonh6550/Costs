@@ -1,6 +1,6 @@
 .project_details {
     padding: 2em;
-        
+   
 }
 
 .project_details h1,
@@ -32,6 +32,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     
+    
 }
 
 .button {
@@ -52,11 +53,51 @@
 
 }
 .project_info {
-    width: 70%;
-    
+    width: 100%;
+       
+}
+
+.project_info_container{
+    padding-top: 1em;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display:grid;
+}
+
+.project_info_form,
+.project_info_form_service {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .project_info_service {
     width: 100%;
     
+}
+
+.button_back {
+    font-weight: bold;
+    background-color: #222;
+    padding: 0.5em 1em;
+    transition: 0.5s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 40px;
+    border: none;
+    
+}
+
+.link {
+    text-decoration: none;
+    color: #FFF;
+
+}
+
+.link:hover {
+    color: #ffbb33;
+
 }

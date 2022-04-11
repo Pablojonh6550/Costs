@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import {parse, v4 as uuiv4} from 'uuid';
 
 // --CSS--
@@ -145,15 +146,18 @@ function Project() {
 
     return (<>
         {project.name ? (
+        
             <div className={styles.project_details}>
                 <Container customClass= "column">
-                    {message && <Message type={type} message={message} />}
+                    {message && <Message type={type} message={message} />}     
                     <div className={styles.details_container}>
+                        <button className={styles.button_back}><Link className={styles.link} to="/projects">Voltar</Link></button>
                         <h1>Projeto: {project.name}</h1>
                         <button className={styles.button} onClick={toggleProjectForm}>{!showProjectForm ? 'Editar Projeto' : 'Fechar'}</button>
                         {!showProjectForm ? (
                             <div className={styles.project_info}>
-                                <p>
+                               <div className={styles.project_info_container}>
+                               <p>
                                     <span>Categoria:</span> {project.category.name}
                                 </p>
                                 <p>
@@ -162,10 +166,13 @@ function Project() {
                                 <p>
                                     <span>Toral Utilizado:</span> R${project.cost}
                                 </p>
+                               </div>
                             </div>
                         ) : (
                             <div className={styles.project_info}>
-                                <ProjectForm handleSubmit={editPost} buttonText="Atualizar" projectData={project} />
+                                <div className={styles.project_info_form}>
+                                    <ProjectForm handleSubmit={editPost} buttonText="Atualizar" projectData={project} />
+                                </div>
                             </div>
                         )}
                     </div>
@@ -176,9 +183,11 @@ function Project() {
                             {!showServiceForm ? 'Adiconar serviço' : 'Fechar'}
                         </button>
                         <div className={styles.project_info_service}>
+                            <div className={styles.project_info_form_service}>
                             {showServiceForm && (
                                 <ServiceForm handleSubmit={createService} textButton="Adicionar serviço" projectData={project}/>
                             )}
+                            </div>
                         </div>
                     </div>
                     <h2>Serviços:</h2>

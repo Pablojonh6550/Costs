@@ -7,8 +7,15 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 50,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "50",
+          "description": "hhhhhhhhhh",
+          "id": "2633060d-8fab-44fc-8601-8fe970daf05f"
+        }
+      ],
       "id": 1
     }
   ],
